@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-
+  traiCay = ['Táo', 'Nho', 'Cam', 'Quýt', 'Xoài', 'Ổi'];
+  theThao = ['Bóng Đá', 'Bóng Chuyền', 'Bóng Rổ', 'Quần Vợt', 'Bơi'];
   constructor() { }
 
   ngOnInit(): void {
