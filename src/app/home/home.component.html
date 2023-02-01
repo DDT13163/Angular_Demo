@@ -10,11 +10,11 @@
         </tr>
         <tr *ngFor="let trai of traiCay2; let i = index">
             <td>{{ i + 1 }}</td>
-            <td>{{ trai.ten }}</td>
+            <td>{{ trai.ten | lowercase}}</td>
             <td class="right">
-                <span [ngClass]="{'so-am': trai.gia < 0}"> {{ trai.gia }}</span>
+                <span [ngClass]="{'so-am': trai.gia < 0}"> {{ trai.gia | currency: "VND":"symbol":"1.2"}}</span>
             </td>
-            <td *ngIf="trai.haGia">Đang Hạ Giá!</td>
+            <td>{{ trai.haGia | onSale | uppercase}}</td>
         </tr>
     </table>
 </div>
