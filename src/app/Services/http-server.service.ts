@@ -19,5 +19,12 @@ export class HttpServerService {
     const url = `${this.REST_API_SERVER}/users`;
     return this.httpClient.get<any>(url, this.httpOptions);
   }
+
+  public postComments(payload: any): Observable<any> {
+    const url = `${this.REST_API_SERVER}/users`;
+    console.log('postComment = ' + url);
+    console.log('postComment: payload', payload);
+    return this.httpClient.post<any>(url, payload, this.httpOptions);
+  }
   
 }
