@@ -1,0 +1,7 @@
+<p>{{ chaMessage }}</p>
+<br>
+<button (click)="choTien()">Cho con tiền</button>
+<br>
+<app-con #thangTeo name="Tèo" (conGoi)="goiCon($event)"></app-con>
+<br>
+<app-con #thangTi name="Tí" (conGoi)="goiCon($event)"></app-con>
